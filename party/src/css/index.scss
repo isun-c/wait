@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import "variable";
+@import "animate";
+@import "comm";
+html,body{
+  position: relative;
+  font-size: 62.5%;
+}
+.part-nav{
+  position: fixed;
+  width: $per_100;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  background-color: $white;
+}
+.part-nav.change-status{
+  background-color: #c7c7c7;
+}
+
+.nav-item{
+  display: $in_block;
+  height: $per_100;
+  font-size: 1.6rem;
+  padding: 0 4px 0 4px;
+
+}
+.filter{
+  float: left;
+}
+.account{
+
+}
+.logo{
+  text-align: center;
+  width: 50px;
+}
+.nav-person{
+  float: right;
+}
+.add-active{
+  line-height: 20px;
+  padding-right: 6px;
+  border-right: 1px solid $border;
+}
+.filter-place{
+  padding-right: 30px;
+}
+.filter-place.on{
+  background: url("../img/shouye/jiantot@2x.png") no-repeat 40px 20px;
+}
+.filter-place.off{
+  /* background: url("../img/shouye/jiantot@2x.png") no-repeat 60px 20px;*/
+}
+.city{
+  position: fixed;
+  top: 50px;
+  width: $per_100;
+  height: $per_100;
+/*  display: none;*/
+  background-color: rgba(0,0,0,.3);
+  .submit-sure{
+    text-align: center;
+    height: 60px;
+
+  }
+  .city-wrap{
+    background-color: $white;
+    .checked-items,.checked-tips{
+      height: 50px;
+      font-size: 1.6rem;
+      line-height: 50px;
+      padding-left: 10px;
+      border-bottom: 1px solid $border;
+    }
+    a{
+      display: $in_block;
+      width: $per_100;
+      hheight: 50px;
+    }
+    .checked-tips{
+      color: red;
+    }
+    .checked-items.ck{
+       background: url("../img/fabuhuodong/gouxuan@2x.png") no-repeat 60px 10px;
+    }
+  }
+  .checked-sure{
+    border: 1px solid red;
+    display: $in_block;
+    width: 120px;
+    margin-top: 10px;
+    height: 40px;
+    background: url("../img/shaixuan/queding@2x.png") 120px 40px no-repeat;
+  }
+}
+.city.city-status{
+  display: block;
+  @include animate-lite(zoomIn,.5,0,1,normal,running,forwards);
+
+}
+
+
+.part-container{
+  padding-top: 60px;
+}

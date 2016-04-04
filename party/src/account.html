@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/account.css">
+    <title>绑定账户</title>
+</head>
+<body>
+<div class="person-container">
+    <div class="person-info">
+        <div class="thumb-head">
+            <a class="head-show-border"><img src="img/thumb/pic_user.png" class="head-show"></a>
+        </div>
+        <div class="nike-name">
+            <h2>Fiona</h2>
+            <span>21岁&nbsp;&nbsp;白羊座</span>
+            <p class="introduction">
+                12312312312
+            </p>
+        </div>
+        <a href="" class="agree">1024</a>
+    </div>
+    <!--flex-3-->
+    <div class="flex-container">
+        <!--我的钱包-->
+            <a href="#" class="my-money">
+                <span class="data">24,841</span><br/>
+                <i class="info">我的钱包</i>
+            </a>
+        <!--账户-->
+            <a href="#" class="bank">
+                <span class="data">24,841</span><br/>
+                <i class="info">账户</i>
+            </a>
+        <!--人气-->
+            <a href="#" class="popular">
+                <span class="data">24,841</span><br/>
+                <i class="info">人气</i>
+            </a>
+    </div>
+    <div class="control-container">
+        <ul>
+            <li><a href="" class="active-item">我发布的活动<span class="count">88</span></a></li>
+            <li><a href="" class="active-item">我报名的活动<span  class="count">88</span></a></li>
+            <li><a href="" class="active-item">我喜欢的活动<span  class="count">88</span></a></li>
+        </ul>
+        <ul style="margin-top: 10px;">
+            <li><a href="" class="active-item">我的资料</a></li>
+            <li><a href="" class="active-item">账户管理</a></li>
+            <li><a href="" class="active-item"></a></li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+    $(function(){
+        $(".checked-items").on('click',function(){
+            console.log(1);
+            $(this).toggleClass("ck");
+        });
+        /*城市筛选*/
+        $(".filter-place").click(function(){
+            $(".part-nav").toggleClass("change-status");
+            $(".city").toggleClass("city-status");
+        });
+    });
+</script>
+</body>
+</html>
