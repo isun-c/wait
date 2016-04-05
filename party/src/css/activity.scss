@@ -22,7 +22,16 @@ html,body{
     border-bottom: 1px solid $border;
   }
 }
-
+.main-title{
+  margin-top: 10px;
+  background-color: $white;
+  height: 50px;
+  padding-left: 10px;
+  .am-form-field{
+    height: 50px;
+    line-height: 50px;
+  }
+}
 .submit-data{
   position: fixed;
   bottom: 0;
